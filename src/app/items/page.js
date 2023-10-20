@@ -27,7 +27,6 @@ const Todopage = async () => {
                 <div className="container px-5 py-24 mx-auto ">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Your Notes</h1>
-                        {todosData.length == 0 && <h1 className="sm:text-xl text-2xl font-medium title-font mb-4 text-gray-500">Your todo list is empty</h1>}
                     </div>
                     <div className="flex flex-wrap -m-2 ">
                         {todosData.todos.map((e, key) => {

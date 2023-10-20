@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import React from 'react';
 const nav = () => {
@@ -12,13 +13,9 @@ const nav = () => {
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                     <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
-               
-                    <Link href={"./notes"} className="mr-5 hover:text-gray-900">todos</Link>
 
-
-
+                    <Link href={"/items"} className="mr-5 hover:text-gray-900">todos</Link>
                 </nav>
-
             </div>
         </header>
     );
