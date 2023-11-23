@@ -18,6 +18,9 @@ const todoItems = async () => {
 const Todopage = async () => {
 
     const todosData = await todoItems();
+    if (!todosData) {
+       return; 
+    }
 
 // console.log(todosData);
 
